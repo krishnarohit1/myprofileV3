@@ -42,7 +42,7 @@ const AboutSection = () => {
               <h4 className="text-lg font-semibold mb-2">Education</h4>
               <div className="space-y-2">
                 <div className="font-medium">Bachelor of Computer Science (Cloud Computing)</div>
-                <div className="text-sm text-muted-foreground">CMR University • 2020 - 2025</div>
+                <div className="text-sm text-muted-foreground">CMR University • 2022 - 2025</div>
                 <div className="text-sm text-accent">79% • Bangalore, India</div>
               </div>
             </div>
