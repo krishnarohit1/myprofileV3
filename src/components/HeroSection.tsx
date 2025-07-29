@@ -63,7 +63,7 @@ const HeroSection = () => {
               asChild
             >
               <a 
-                href="https://drive.google.com/uc?export=download&id=1WGS4yx7QbnAOSuLuUNGYghpsEM5Jy6Xb" 
+                href="https://drive.google.com/file/d/11571O3E44x93EwIAsnIwMC66MpjDuNYf/view?usp=drive_link" 
                 download
                 className="inline-flex items-center"
               >
