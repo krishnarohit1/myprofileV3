@@ -15,22 +15,24 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Here you would typically send the form data to your backend
-    // For now, we'll just show a success message
+
+    // Show a success toast
     toast({
-      title: "Message sent!",
+      title: 'Message sent!',
       description: "Thanks for reaching out. I'll get back to you soon!",
     });
-    
+
     setFormData({ name: '', email: '', message: '' });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   return (
@@ -178,7 +180,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="your.email@example.com"
+                  placeholder="rohitkrishna126@gmail.com"
                   className="bg-background/50 border-border/50 focus:border-primary"
                 />
               </div>
